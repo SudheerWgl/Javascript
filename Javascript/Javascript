@@ -1,0 +1,65 @@
+1. What is call, apply and bind functions?
+2. difference  b/w typeof and valueof?
+3. difference b/w toString and valueof?
+4. what is observable,prototype,singleton design pattern?
+5. how to create a constructor?
+6. How to check object has a key and values eg var a{name,DOB,age}. 
+7. what filter will do in arrays?
+8. what is prototype ?
+
+
+1)  what are Closures? give practical example.
+2)  Explain Prototype inheritance with example
+3)  What are Self executive functions and also provide examples and usage
+4)  Diff btw constructor functions and other types
+5)  Diff types of function hoisting
+6)  Knowledge on JQuery framework and DOM manipulation
+7)  what javascript function or conepts you have used?
+8)  what jquery function and concepts you have used?
+9)  what are different array functions you have used?
+10) how to create empty object and array in javascript?
+11) what are different data types in javascript?
+
+1. Which executes first in Event bubbling or capturing
+----------------------------------------------------------
+
+1. diff bw Object.create(person) and new person()
+2. how to li tag dynamically to the dom and add event to it.....
+3. how to addEventLister to capturing and bubbling
+4. what is DOM
+5. drawn a web site with header, sidebar, footer and main content and asked for DOM model of that webpage
+6. progrma to print fibonacci series
+7. Primitive and no-primitive data types in js
+8. diff bw splice and slice methods in javascript
+
+-------------------------------------------------------------------------------------------------------
+
+1. Generate all subsets of a string For Eg ‘water’ should generate ‘wa’, ‘wat’, ‘wate’ etc.
+2. From the given [1,2,3,4,5,6,7,8] Print out all the even number from the array?
+3. What will be the output when the following code is executed? Explain.
+    console.log(false == '0')
+    console.log(false === '0')
+4. Write any 5 array prototype function with pseudo code.
+
+Fuction and Variable hoisting concept example
+``````````````````````````````````````````````
+(function exec(){
+	//console.log(x)		// undefined
+	//console.log(typeof x)		// undefined
+	//x()				// x is not a function
+	//console.log(typeof hello);  	// undefined
+	//hello()			// hello is not defined
+
+	var x = function hello(){
+		alert();
+	}
+	//console.log(x)		// function hello(){alert();}
+	//console.log(typeof x)		// function
+	//x()				// Executes and alert
+	//console.log(typeof hello);  	// undefined
+	//hello()			// hello is not defined
+})();
+
+------------------------------------------------------------------------------------------------------------------
+
+
