@@ -60,6 +60,56 @@ Fuction and Variable hoisting concept example
 	//hello()			// hello is not defined
 })();
 
-------------------------------------------------------------------------------------------------------------------
+
+Call back functions:
+````````````````````
+function first(value,callback){
+	callback(value+2);
+}
+
+function second(value,callback){
+	callback(value+2);
+}
+
+function third(value,callback){
+	callback(value+2);
+}
+
+first(2,function(result){
+	second(result,function(result){
+		third(result,function(result){
+			console.log("final result...",result);
+		});
+	});
+});
+
+
+Promises:
+`````````
+function first(value){
+	return new Promise(function(resolve, reject){
+        	resolve(value+2);
+    });
+}
+
+function second(value){
+	return new Promise(function(resolve, reject){
+        	resolve(value+2);
+    });
+}
+
+function third(value){
+	return new Promise(function(resolve, reject){
+        	resolve(value+2);
+    });
+}
+
+first(2).then(function(res){
+	return second(res);
+}).then(function(res){
+	return third(res);
+}).then(function(res){
+	console.log("final result...",res);
+});
 
 
