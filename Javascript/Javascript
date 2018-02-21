@@ -113,3 +113,13 @@ first(2).then(function(res){
 });
 
 
+-------------------------------------------
+
+(function(){
+fname = "sudheer";
+var lname = "ponnala";
+})();
+
+console.log(fname);		// sudheer
+console.log(lname);		// lname is not defined
+
